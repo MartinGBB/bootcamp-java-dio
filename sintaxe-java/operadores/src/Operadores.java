@@ -26,7 +26,7 @@ public class Operadores {
     public static void condiçao(String[] args) {
       int a, b;
       a = 6;
-      b = 6;
+      b = 4;
     
       boolean result;
 
@@ -35,8 +35,11 @@ public class Operadores {
       else
         result = false;
 
-      System.out.println("Condicional: " + result);
+      System.out.println("Condicional IF/ELSE: " + result);
+
+      // Ternary operator
+      boolean resultTernary = a==b ? true : false;
+      System.out.println("Ternary operator: " + resultTernary);
+      
       };
-
-
 }
