@@ -1,8 +1,7 @@
+package edu.martin.primeiropacote;
+
 public class MinhaClasse {
     public static void main(String[] args) {
-        int year = 2021;
-        boolean condicional = true;
-
         String firstName = "Martin";
         String lastName = "Brazón";
 
