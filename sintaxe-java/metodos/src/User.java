@@ -23,5 +23,16 @@ public class User {
     smartTv.decreaseVolume();
     System.out.println("Diminuir volume: " + smartTv.volume);
 
+
+    
+    
+    smartTv.changeChanel(52);
+
+    smartTv.increaseChanel();
+    smartTv.increaseChanel();
+
+    smartTv.decreaseChanel();
+    System.out.println("Canal com parametro: " + smartTv.channel);
+    
   }
 }
