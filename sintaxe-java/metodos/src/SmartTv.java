@@ -3,11 +3,19 @@ public class SmartTv {
     int volume = 20;
     int channel = 10;
 
-    public void on(String[] args) {
+    public void on() {
         on = true;
     }
 
-    public void off(String[] args) {
-        on = true;
+    public void off() {
+        on = false;
+    }
+
+    public void increaseVolume() {
+        volume += 1;
+    }
+
+    public void decreaseVolume() {
+        volume -= 1;
     }
 }

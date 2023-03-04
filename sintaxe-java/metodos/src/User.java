@@ -3,13 +3,25 @@ public class User {
     SmartTv smartTv = new SmartTv();
 
     System.out.println("TV ligada: " + smartTv.on);
-    System.out.println("volumem: " + smartTv.volume);
-    System.out.println("canal: " + smartTv.channel);
+    System.out.println("volume atual: " + smartTv.volume);
+    System.out.println("canal atual: " + smartTv.channel);
 
     System.out.println("Metodos:");
 
-    smartTv.on(args);
-    System.out.println("TV ligada: " + smartTv.on);
+    smartTv.on();
+    System.out.println("TV ligada(metodo on): " + smartTv.on);
+
+    smartTv.off();
+    System.out.println("TV ligada(metodo off): " + smartTv.on);
+
+    smartTv.increaseVolume();
+    smartTv.increaseVolume();
+    smartTv.increaseVolume();
+    smartTv.increaseVolume();
+    System.out.println("Aumentar volume: " + smartTv.volume);
+
+    smartTv.decreaseVolume();
+    System.out.println("Diminuir volume: " + smartTv.volume);
 
   }
 }
