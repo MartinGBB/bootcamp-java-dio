@@ -4,8 +4,6 @@ public class MinhaClasse {
     }
 }
 
-
-
 // Tipos de comentários:
 
 // On Line:
