@@ -1,4 +1,4 @@
-## Exercicios de estrutura condicional
+## Exercicios de estrutura condicional e repetição
 
 * ### Case 1:
     Vamos imaginar que em um processo seletivo, existe o valor base salarial de R$ 2.000,00 e o salário pretentido pelo candidato. Vamos elaborar um controle de fluxo onde:
