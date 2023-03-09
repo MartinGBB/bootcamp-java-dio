@@ -6,9 +6,16 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MeasuringSystem",
+      "request": "launch",
+      "mainClass": "MeasuringSystem",
+      "projectName": "bootcamp-java-dio_7a98618f"
+    },
+    {
+      "type": "java",
       "name": "Current File",
       "request": "launch",
-      "mainClass": "${file}",
+      "mainClass": "${file}"
     },
     {
       "type": "java",
@@ -20,7 +27,7 @@
         "Ral",
         "34"
       ],
-      "projectName": "bootcamp-java-dio_7a98618f",
+      "projectName": "bootcamp-java-dio_7a98618f"
     },
     {
       "type": "java",
