@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PlanOperator",
+      "request": "launch",
+      "mainClass": "PlanOperator",
+      "projectName": "bootcamp-java-dio_7a98618f"
+    },
+    {
+      "type": "java",
       "name": "MeasuringSystem",
       "request": "launch",
       "mainClass": "MeasuringSystem",
