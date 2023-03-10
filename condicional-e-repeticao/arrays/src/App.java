@@ -5,9 +5,16 @@ public class App {
 
         int count = arrayOfNumbers.length - 1;
 
+        System.out.print("Array inverso: ");
         while(count >= 0) {
             System.out.print(arrayOfNumbers[count] + " ");
             count -= 1;
+        }
+
+        System.out.println("");
+        System.out.print("Array original: ");
+        for (int index = 0; index < arrayOfNumbers.length; index += 1) {
+            System.out.print(arrayOfNumbers[index] + " ");
         }
     }
 }
