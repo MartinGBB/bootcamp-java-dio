@@ -23,9 +23,8 @@ public class Ex4_EvenAndOdd {
         number = scanner.nextInt();
         count += 1;
     
-        if (number % 2 == 0) {
-          pair += 1;
-        } else odd += 1;
+        if (number % 2 == 0) pair += 1;
+        else odd += 1;
       } while(count < quantityNumbers);
     }
  
