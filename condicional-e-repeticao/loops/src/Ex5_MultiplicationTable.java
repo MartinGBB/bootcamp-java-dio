@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
 Desenvolva um gerador de tabuada,
 capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10.
@@ -11,5 +13,18 @@ Tabuada de 5:
 */
 
 public class Ex5_MultiplicationTable {
-  
+  public static void main(String[] args) {
+    int numberTable;    
+    int currentValue;
+
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.println("Insira o numero da tabuada que deseja ver");
+      numberTable = scanner.nextInt();
+
+      for (int index = 1; index <= 10; index += 1) {
+        currentValue = numberTable * index;
+        System.out.println(numberTable + " X " + index + " = " + currentValue);
+      }
+    }
+  }
 }
