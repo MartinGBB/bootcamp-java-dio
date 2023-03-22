@@ -11,7 +11,17 @@ public class Pilha {
     No refAuxiliar = refNoEntradaPilha;
 
     refNoEntradaPilha = novoNo;
-    refNoEntradaPilha.setReNo(refAuxiliar);
+    refNoEntradaPilha.setRefNo(refAuxiliar);
+  }
+
+  public No pop() {
+    if (!this.isEmpty()) {
+      No noPoped = refNoEntradaPilha;
+      refNoEntradaPilha.getRefNo();
+      return noPoped;
+    }
+
+    return null;
   }
 
   public No top() {
