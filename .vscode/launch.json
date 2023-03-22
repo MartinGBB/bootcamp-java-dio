@@ -8,6 +8,13 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "conceitos.noPilhas.Main",
+      "projectName": "bootcamp-java-dio_7a98618f"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "conceitos.projetono.Main",
       "projectName": "bootcamp-java-dio_7a98618f"
     },
