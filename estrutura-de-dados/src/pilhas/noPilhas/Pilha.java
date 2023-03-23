@@ -1,4 +1,4 @@
-package conceitos.noPilhas;
+package pilhas.noPilhas;
 
 public class Pilha {
   private No refNoEntradaPilha;

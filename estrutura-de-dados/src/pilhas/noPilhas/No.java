@@ -1,4 +1,4 @@
-package conceitos.noPilhas;
+package pilhas.noPilhas;
 
 public class No {
   private int dado;

@@ -1,4 +1,4 @@
-package conceitos.noPilhas;
+package pilhas.noPilhas;
 
 public class Main {
   public static void main(String[] args) {

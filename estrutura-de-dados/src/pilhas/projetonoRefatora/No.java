@@ -1,19 +1,19 @@
-package conceitos.projetono;
+package pilhas.projetonoRefatora;
 
-public class No {
-  private String conteudo;
+public class No<T> {
+  private T conteudo;
   private No proximono;  
 
-  public No(String conteudo) {
+  public No(T conteudo) {
     this.proximono = null;
     this.conteudo = conteudo;
   }
 
-  public String getConteudo() {
+  public T getConteudo() {
     return conteudo;
   }
 
-  public void setConteudo(String conteudo) {
+  public void setConteudo(T conteudo) {
     this.conteudo = conteudo;
   }
 
@@ -21,7 +21,7 @@ public class No {
     return proximono;
   }
 
-  public void setProximono(No proximono) {
+  public void setProximono(No<T> proximono) {
     this.proximono = proximono;
   }
 
