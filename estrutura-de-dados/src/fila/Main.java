@@ -2,7 +2,7 @@ package fila;
 
 public class Main {
   public static void main(String[] args) {
-    Fila minhaFila = new Fila();
+    Fila<String> minhaFila = new Fila<>();
 
     minhaFila.enqueue("primeiro");
     minhaFila.enqueue("segundo");
@@ -18,5 +18,9 @@ public class Main {
     System.out.println(minhaFila.first());
     System.out.println(minhaFila);
 
+
+    Fila<Integer> minhaFilaInt = new Fila<>();
+    minhaFilaInt.enqueue(1);
+    System.out.println("Inteiro: " + minhaFilaInt);
   }
 }
