@@ -22,6 +22,7 @@ public class Fila {
         }
         break;
       }
+      return primeiroNo;
     }
     return null;
   }
@@ -35,9 +36,10 @@ public class Fila {
         if (primeiroNo.getRefNo() != null) {
           noAuxiliar = primeiroNo;
           primeiroNo = primeiroNo.getRefNo();
+        } else {
+          noAuxiliar.setRefNo(null);
+          break;
         }
-        noAuxiliar.setRefNo(null);
-        break;
       }
       return primeiroNo;
     }
@@ -59,7 +61,7 @@ public class Fila {
       if (noAuxiliar.getRefNo() != null) {
         noAuxiliar = noAuxiliar.getRefNo();
       } else {
-        stringRetorno = "null";
+        stringRetorno += "null";
         break;
       }
       }
