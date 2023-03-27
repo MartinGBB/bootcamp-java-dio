@@ -8,6 +8,13 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "listasEncadeadas.exercicio1.Main",
+      "projectName": "bootcamp-java-dio_7a98618f"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "fila.Main",
       "projectName": "bootcamp-java-dio_7a98618f"
     },

@@ -2,7 +2,7 @@ package listasEncadeadas.exercicio1;
 
 public class No<T> {
   private T conteudo;
-  private No proximoNo;
+  private No<T> proximoNo;
 
   public No() {
     this.proximoNo = null;
@@ -13,7 +13,7 @@ public class No<T> {
     this.conteudo = conteudo;
   }
 
-  public No(T conteudo, No proximoNo) {
+  public No(T conteudo, No<T> proximoNo) {
     this.conteudo = conteudo;
     this.proximoNo = proximoNo;
   }
@@ -26,12 +26,12 @@ public class No<T> {
     this.conteudo = conteudo;
   }
 
-  public No getProximoNo() {
+  public No<T> getProximoNo() {
     return proximoNo;
   }
 
-  public void setProxiomoNo(No proximNo) {
-    this.proximoNo = proximNo;
+  public void setProximoNo(No<T> proximoNo) {
+    this.proximoNo = proximoNo;
   }
 
   @Override

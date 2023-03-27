@@ -16,10 +16,10 @@ public class ListaEncadeada<T> {
 
     No<T> noAuxiliar = referenciaEntrada;
   
-    for (int i = 0; i < this.size() -1; i ++) {
+    for (int i = 0; i < this.size() -1; i++) {
       noAuxiliar = noAuxiliar.getProximoNo();
     }
-    noAuxiliar.setProxiomoNo(novoNo);
+    noAuxiliar.setProximoNo(novoNo);
   }
 
   public T get(int index) {
@@ -32,7 +32,7 @@ public class ListaEncadeada<T> {
     No<T> noAuxiliar = referenciaEntrada;
     No<T> noRetorno = null;
 
-    for (int i = 0; i < this.size() -1; i ++) {
+    for (int i = 0; i <= index; i ++) {
       noRetorno = noAuxiliar;
       noAuxiliar = noAuxiliar.getProximoNo();
     }
@@ -49,7 +49,7 @@ public class ListaEncadeada<T> {
     }
 
     No<T> noAnterior = getNo( - 1);
-    noAnterior.setProxiomoNo(noPivor.getProximoNo());
+    noAnterior.setProximoNo(noPivor.getProximoNo());
     return noPivor.getConteudo();
   }
 
@@ -81,7 +81,7 @@ public class ListaEncadeada<T> {
   }
 
   public boolean isEmpty() {
-    return referenciaEntrada != null;
+    return referenciaEntrada == null;
   }
 
   @Override
@@ -91,7 +91,7 @@ public class ListaEncadeada<T> {
 
     for (int i = 0; i < this.size(); i++) {
       strRetorno += "[No{" + "conteudo=" + noAuxiliar.getConteudo() + "}] -->";
-      noAuxiliar = noAuxiliar.getProximoNo()
+      noAuxiliar = noAuxiliar.getProximoNo();
     }
     strRetorno += "null";
     return strRetorno;
