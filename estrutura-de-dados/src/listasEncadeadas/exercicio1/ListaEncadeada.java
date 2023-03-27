@@ -48,7 +48,7 @@ public class ListaEncadeada<T> {
       return noPivor.getConteudo();
     }
 
-    No<T> noAnterior = getNo( - 1);
+    No<T> noAnterior = getNo(index - 1);
     noAnterior.setProximoNo(noPivor.getProximoNo());
     return noPivor.getConteudo();
   }
