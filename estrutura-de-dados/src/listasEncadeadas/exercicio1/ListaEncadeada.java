@@ -1,6 +1,4 @@
-package listasEncadeadas;
-
-import listasEncadeadas.exercicio1.No;
+package listasEncadeadas.exercicio1;
 
 public class ListaEncadeada<T> {
   No<T> referenciaEntrada;
@@ -8,6 +6,23 @@ public class ListaEncadeada<T> {
   public ListaEncadeada() {
     this.referenciaEntrada = null;
   }
+
+  public void add(T conteudo) {
+    No<T> novoNo = new No<>(conteudo);
+    if (this.isEmpty()) {
+      referenciaEntrada = novoNo;
+      return;
+    }
+
+    No<T> noAuxiliar = referenciaEntrada;
+  
+    for (int i = 0; i < this.size() -1; i ++) {
+      noAuxiliar = noAuxiliar.getProximoNo();
+    }
+    noAuxiliar.setProxiomoNo(novoNo);
+  }
+
+
 
   public int size() {
     int tamanhoLista = 0;
